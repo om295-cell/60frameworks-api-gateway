@@ -3,20 +3,23 @@
   "version": "1.0.0",
   "description": "High-availability load balancing API Gateway for 60Frameworks with automatic failover and health diagnostics",
   "type": "module",
-  "main": "api/index.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "node api/index.js",
-    "start": "node api/index.js",
+    "dev": "node index.js",
+    "start": "node index.js",
     "test": "node test-gateway.js"
   },
   "keywords": [
     "api-gateway",
     "load-balancer",
     "failover",
+    "express",
     "vercel",
     "round-robin"
   ],
   "author": "60Frameworks",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
